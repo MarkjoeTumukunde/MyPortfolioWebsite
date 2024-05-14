@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Potifolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Markjoe Tumukunde</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Markjoe Tumukunde</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+        </div>   
+    </nav>
+    <section id="profile">
+        <div class="section_pic_container">
+            <img src="./Assets/profile-pic-5.png" alt="Markjoe Profile Picture">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">
+                Hello I'm
+            </p>
+            <h1 class="title">Markjoe Tumukunde</h1>
+            <p class="section_text_p2">Computer Scientist</p>
+            <div class="btn_container">
+                <button class="btn btn_color_2" 
+                onclick="window.open('./Assets/MyCV.pdf')">
+                Download CV</button>
+                <button class="btn btn_color_1" 
+                onclick="location.href='./#contact'">
+                Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./Assets/linkedin.png" alt="My linkedin profile" 
+                class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/markjoe-tumukunde-221a0b24a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'">
+                <img src="./Assets/github.png" alt="My github profile" 
+                class="icon" 
+                onclick="location.href='https://github.com/MarkjoeTumukunde/Mypotifoliowebsite'">
+            </div>
+        </div>
+        <img src="./Assets/arrow.png" 
+        alt="Arrow Icon" 
+        class="icon arrow"
+        onclick="location.href='./#about'">
+    </section>
+    <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section_container">
+            <div class="section_pic_container">
+                <img src="Assets/Profile.png" 
+                alt="Profile Picture" 
+                class="about_pic">
+            </div>
+            <div class="about_details_container">
+                <div class="about_containers">
+                    <div class="details_container">
+                        <img src="Assets/experience.png" 
+                        alt="Experience Icon" 
+                        class="icon">
+                        <h3>Experience</h3>
+                        <p>2+ Years <br>Computer Science</p>
+                    </div>
+                    <div class="details_container">
+                        <img src="Assets/education.png" 
+                        alt="Education Icon" 
+                        class="icon">
+                        <h3>Education</h3>
+                        <p>Bachelors of Science in Computer Science <br>IBM Data Science Professional Certificate</p>
+                    </div>
+                </div>
+                <div class="text_container">
+                    <h3>Career Objective</h3>
+                    <p>A proactive, adaptable professional with more than 3 years experience in the field
+                        A computer scientist willing to adopt to new ideas and learn to enhance my skills. 
+                        Having an ability to reach targeted goals and have established 
+                        the reputation as dependable and accountable employees.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./Assets/arrow.png" 
+        alt="Arrow Icon" 
+        class="icon arrow"
+        onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section_text_p1">Explore</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience_details_container">
+            <div class="about_containers">
+                <div class="details_container">
+                    <h2 class="experience_subtitle">Front End Development</h2>
+                    <div class="article_container">
+                        <article>
+                            <img src="./Assets/checkmark.png" 
+                            alt="Experience Icon" 
+                            class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" 
+                            alt="Experience Icon" 
+                            class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" 
+                            alt="Experience Icon" 
+                            class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" 
+                            alt="Experience Icon" 
+                            class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" 
+                            alt="Experience Icon" 
+                            class="icon">
+                            <div>
+                                <h3>Java Script</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" 
+                            alt="Experience Icon" 
+                            class="icon">
+                            <div>
+                                <h3>Java Script</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" 
+                            alt="Experience Icon" 
+                            class="icon">
+                            <div>
+                                <h3>Java Script</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" 
+                            alt="Experience Icon" 
+                            class="icon">
+                            <div>
+                                <h3>Data Science</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" 
+                            alt="Experience Icon" 
+                            class="icon">
+                            <div>
+                                <h3>Data Science</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        
+                    </div>
+                </div>
+                <div class="details_container">
+                    <h2 class="experience_subtitle">Back End Development</h2>
+                    <div class="article_container">
+                        <article>
+                            <img src="./Assets/checkmark.png" 
+                            alt="Experience Icon" 
+                            class="icon">
+                            <div>
+                                <h3>PostgreSQL</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" 
+                            alt="Experience Icon" 
+                            class="icon">
+                            <div>
+                                <h3>Node Js</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" 
+                            alt="Experience Icon" 
+                            class="icon">
+                            <div>
+                                <h3>Express Js</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" 
+                            alt="Experience Icon" 
+                            class="icon">
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" 
+                            alt="Experience Icon" 
+                            class="icon">
+                            <div>
+                                <h3>TypeScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" 
+                            alt="Experience Icon" 
+                            class="icon">
+                            <div>
+                                <h3>Artifical Intelligence</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" 
+                            alt="Experience Icon" 
+                            class="icon">
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" 
+                            alt="Experience Icon" 
+                            class="icon">
+                            <div>
+                                <h3>TypeScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" 
+                            alt="Experience Icon" 
+                            class="icon">
+                            <div>
+                                <h3>Artifical Intelligence</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./Assets/arrow.png" 
+        alt="Arrow Icon" 
+        class="icon arrow"
+        onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience_details_container">
+            <div class="about_containers">
+            <div class="details_containers color_container">
+                <div class="article_container">
+                    <img src="Assets/project-1.png" 
+                    alt="project 1"
+                    class="project_img">
+                </div>
+                <h2 class="experience_subtitle project_title">Project One</h2>
+                <div class="btn_container">
+                    <button class="btn btn_color_2 project_btn"
+                    onclick="location.href='https://github.com/MarkjoeTumukunde/IT-100-Internet-technologies-Web-design.git'">
+                        Github
+                    </button>
+                    <button class="btn btn_color_2 project_btn"
+                    onclick="location.href='https://github.com/MarkjoeTumukunde/IT-100-Internet-technologies-Web-design.git'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details_containers color_container">
+                <div class="article_container">
+                    <img src="Assets/project-2.png" 
+                    alt="project 2"
+                    class="project_img">
+                </div>
+                <h2 class="experience_subtitle project_title">Project Two</h2>
+                <div class="btn_container">
+                    <button class="btn btn_color_2 project_btn"
+                    onclick="location.href='https://github.com/MarkjoeTumukunde/IT-100-Internet-technologies-Web-design.git'">
+                        Github
+                    </button>
+                    <button class="btn btn_color_2 project_btn"
+                    onclick="location.href='https://github.com/MarkjoeTumukunde/IT-100-Internet-technologies-Web-design.git'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details_containers color_container">
+                <div class="article_container">
+                    <img src="Assets/project-3.png" 
+                    alt="project 3"
+                    class="project_img">
+                </div>
+                <h2 class="experience_subtitle project_title">Project Three</h2>
+                <div class="btn_container">
+                    <button class="btn btn_color_2 project_btn"
+                    onclick="location.href='https://github.com/MarkjoeTumukunde/IT-100-Internet-technologies-Web-design.git'">
+                        Github
+                    </button>
+                    <button class="btn btn_color_2 project_btn"
+                    onclick="location.href='https://github.com/MarkjoeTumukunde/IT-100-Internet-technologies-Web-design.git'">
+                        Live Demo
+                    </button>
+                </div>
+            </div></div>
+        </div>
+        <img src="./Assets/arrow.png" 
+        alt="Arrow Icon" 
+        class="icon arrow"
+        onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section_text_p1">Get inTouch</p>
+        <h1 class="title">Contact Me</h1>
+    
+    <section id="contactus">
+        <!--Form-->
+            
+        <div class="contact_info_container">
+            <div class="contact-box">
+                <div class="contact form">
+                    <h1>Send a message</h1>
+                    <form action="">
+                        <div class="formbox">
+                            <div class="raw50">
+                                <div class="inputbox">
+                                    <span>Name</span>
+                                    <input type="text" placeholder="Enter Your Name Here">
+                                </div>
+                                <div class="inputbox">
+                                    <span>Company</span>
+                                    <input type="text" placeholder="Enter Your Name Here">
+                                </div>
+                                
+                            </div>
+                            <div class="radio">
+                                <div class="input-radio">
+                                    <label>Gender:</label>
+                                    <input type="radio" name="gender">Male
+                                    <input type="radio" name="gender">Female
+                                </div>
+                            </div>
+                            <div class="raw50">
+                                <div class="inputbox">
+                                    <span>Email Adress</span>
+                                    <input type="text" placeholder="Enter Your Email Here">
+                                </div>
+                                <div class="inputbox">
+                                    <span>Mobile Number</span>
+                                    <input type="text" placeholder="Enter Your Mobile Number Here">
+                                </div>
+                            </div>
+                            <div class="raw100">
+                                <div class="inputbox">
+                                    <span>Message</span>
+                                    <textarea placeholder="Write your message here..."></textarea>
+                                </div>
+                            </div>
+                            <div class="raw100">
+                                <div class="inputbox">
+                                    <input class="normal" type="submit" value="Send">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>   
+        </div>
+    </section>
+    <footer>
+        <div class="col">
+            <div class= "follow">
+				<h4>Follow Me</h4>
+			</div>
+			<div class="contact_info_container">
+			    <img src="./Assets/twitter.png" 
+                alt="twitter" 
+                class="icon contact_icon email_icon twitter">
+                <p class=""><a href="https://twitter.com/Markjoetumukund">Twitter</a></p>
+            </div>
+			<div class="contact_info_container">
+			    <img src="./Assets/whatsapp_icon.png" 
+                alt="Whatsapp icon" 
+                class="icon contact_icon email_icon">
+                <p><a href="whatsapp://+256773541900">+256773541900</a></p>
+            </div>
+			<div class="contact_info_container">
+			    <img src="./Assets/email.png" 
+                alt="Email icon" 
+                class="icon contact_icon email_icon">
+                <p><a href="mailto:examplemail@gmail.com">macjoe98@gmail.com</a></p>
+            </div>
+            <div class="contact_info_container">
+			    <img src="./Assets/linkedin.png" 
+                alt="linkedin icon" 
+                class="icon contact_icon">
+                <p class="likedin"><a href="https://www.linkedin.com/in/markjoe-tumukunde-221a0b24a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedin</a></p>
+            </div>
+		</div>
+        <div class="col">
+            <div class= "follow">
+				<h4>Follow Me</h4>
+			</div>
+			<div class="contact_info_container">
+			    <img src="./Assets/twitter.png" 
+                alt="twitter" 
+                class="icon contact_icon email_icon twitter">
+                <p class=""><a href="https://twitter.com/Markjoetumukund">Twitter</a></p>
+            </div>
+			<div class="contact_info_container">
+			    <img src="./Assets/whatsapp_icon.png" 
+                alt="Whatsapp icon" 
+                class="icon contact_icon email_icon">
+                <p><a href="whatsapp://+256773541900">+256773541900</a></p>
+            </div>
+			<div class="contact_info_container">
+			    <img src="./Assets/email.png" 
+                alt="Email icon" 
+                class="icon contact_icon email_icon">
+                <p><a href="mailto:examplemail@gmail.com">macjoe98@gmail.com</a></p>
+            </div>
+            <div class="contact_info_container">
+			    <img src="./Assets/linkedin.png" 
+                alt="linkedin icon" 
+                class="icon contact_icon">
+                <p class="likedin"><a href="https://www.linkedin.com/in/markjoe-tumukunde-221a0b24a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedin</a></p>
+            </div>
+		</div>
+        <div class="col">
+            <div class= "follow">
+				<h4>Follow Me</h4>
+			</div>
+			<div class="contact_info_container">
+			    <img src="./Assets/twitter.png" 
+                alt="twitter" 
+                class="icon contact_icon email_icon twitter">
+                <p class=""><a href="https://twitter.com/Markjoetumukund">Twitter</a></p>
+            </div>
+			<div class="contact_info_container">
+			    <img src="./Assets/whatsapp_icon.png" 
+                alt="Whatsapp icon" 
+                class="icon contact_icon email_icon">
+                <p><a href="whatsapp://+256773541900">+256773541900</a></p>
+            </div>
+			<div class="contact_info_container">
+			    <img src="./Assets/email.png" 
+                alt="Email icon" 
+                class="icon contact_icon email_icon">
+                <p><a href="mailto:examplemail@gmail.com">macjoe98@gmail.com</a></p>
+            </div>
+            <div class="contact_info_container">
+			    <img src="./Assets/linkedin.png" 
+                alt="linkedin icon" 
+                class="icon contact_icon">
+                <p class="likedin"><a href="https://www.linkedin.com/in/markjoe-tumukunde-221a0b24a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedin</a></p>
+            </div>
+		</div>
+        <div class="col">
+            <div class= "follow">
+				<h4>Follow Me</h4>
+			</div>
+			<div class="contact_info_container">
+			    <img src="./Assets/twitter.png" 
+                alt="twitter" 
+                class="icon contact_icon email_icon twitter">
+                <p class=""><a href="https://twitter.com/Markjoetumukund">Twitter</a></p>
+            </div>
+			<div class="contact_info_container">
+			    <img src="./Assets/whatsapp_icon.png" 
+                alt="Whatsapp icon" 
+                class="icon contact_icon email_icon">
+                <p><a href="whatsapp://+256773541900">+256773541900</a></p>
+            </div>
+			<div class="contact_info_container">
+			    <img src="./Assets/email.png" 
+                alt="Email icon" 
+                class="icon contact_icon email_icon">
+                <p><a href="mailto:examplemail@gmail.com">macjoe98@gmail.com</a></p>
+            </div>
+            <div class="contact_info_container">
+			    <img src="./Assets/linkedin.png" 
+                alt="linkedin icon" 
+                class="icon contact_icon">
+                <p class="likedin"><a href="https://www.linkedin.com/in/markjoe-tumukunde-221a0b24a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedin</a></p>
+            </div>
+		</div>
+        <div class="copy-right">
+        <p>Copyright &#169; 2024 MarkjoeTumukunde. All Rights reserved</p>
+        </div>
+    </footer>
+<script src="script.js"></script>    
+</body>
+</html>
