@@ -54,6 +54,62 @@
     }
 }
 
+@media (max-width: 1000px) {
+    #contactus .contact {
+    width: 100% !important;
+    max-width: 1200px !important;  /* Or 90vw for large, 98vw for mobile */
+    padding: 18px 3vw !important;
+    margin: 0 auto !important;     /* Centers and gives even margin left/right */
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    }
+}
+
+@media (max-width: 900px) {
+    .section_pic_container {
+        width: 180px !important;
+        height: 180px !important;
+        margin: 0 10px !important;
+        /* Make sure it's not fixed/absolute unless needed */
+        position: relative;
+    }
+    nav,
+    #desktop-nav,
+    #hamburger-nav {
+        z-index: 2000 !important;
+        position: relative;
+        background: transparent !important;
+    }
+    #contactus .contact {
+    width: 100% !important;
+    max-width: 800px !important;  /* Or 90vw for large, 98vw for mobile */
+    padding: 18px 3vw !important;
+    margin: 0 auto !important;     /* Centers and gives even margin left/right */
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    }
+
+@media (max-width: 700px) {
+    #contactus .contact {
+    width: 100% !important;
+    max-width: 500px !important;  /* Or 90vw for large, 98vw for mobile */
+    padding: 18px 3vw !important;
+    margin: 0 auto !important;     /* Centers and gives even margin left/right */
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+}
+
+    .formbox .raw50 {
+        flex-direction: column !important;
+        gap: 0 !important;
+    }
+    .inputbox {
+        width: 100% !important;
+        margin-bottom: 10px !important;
+    }
+}
+
+
 
 @media screen and (max-width: 600px) {
     #contact,
@@ -119,5 +175,23 @@
 
     .text_container {
         text-align: justify;
+    }
+}
+@media (max-width: 480px) {
+    #contactus .contact {
+    width: 100% !important;
+    max-width: 500px !important;  /* Or 90vw for large, 98vw for mobile */
+    padding: 18px 3vw !important;
+    margin: 0 auto !important;     /* Centers and gives even margin left/right */
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    }
+    .formbox {
+        padding: 0 !important;
+    }
+    .inputbox input,
+    .inputbox textarea {
+        font-size: 1em;
+        padding: 8px;
     }
 }

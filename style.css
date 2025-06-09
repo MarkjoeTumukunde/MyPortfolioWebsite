@@ -10,6 +10,9 @@ body {
     font-family: "Poppins", sans-serif;
       
 }
+body > .content {
+    flex: 1;  /* This ensures that the main content section takes up all available space */
+}
 
 html {
     scroll-behavior: smooth;
@@ -139,12 +142,13 @@ a:hover {
 
 /* Section */
 section {
-    padding: 4vh;
-    height: 96vh;
+    padding: 4vh 0;  /* Only top and bottom padding */
     margin: 0 10rem;
-    box-sizing: border-box;
+    height: auto;  /* Let the height be determined by the content */
     min-height: fit-content;
+    box-sizing: border-box;
 }
+
 
 .section_container {
     display: flex;
@@ -204,6 +208,16 @@ section {
     gap: 1rem;
 }
 
+.section_description {
+    margin-bottom: 20px;
+}
+
+.content {
+    max-width: 1200px; /* Restrict content to a max-width */
+    margin: 0 auto; /* Center content */
+    padding: 0 20px; /* Add some padding to prevent content from touching edges */
+}
+
 /* Icons */
 .icon {
     cursor: pointer;
@@ -259,6 +273,7 @@ section {
 /* About Section */
 #about {
     position: relative;
+
 }
 
 .about_containers {
@@ -358,7 +373,7 @@ article .icon {
     cursor: default;
 }
 
-/* Projects Section*/
+/* Projects Section */
 #projects {
     position: relative;
 }
@@ -385,59 +400,121 @@ article .icon {
     border-color: rgb(163, 163, 163);
 }
 
-/* Gallery Section*/
+/* Gallery Section */
 /* Article detail styles */
-#product1{
-	text-align: center;
+#product1 {
+    text-align: center;
 }
 
-#product1 .pro-container{
-	display: flex;
-	justify-content: space-between;
-	padding: 20px;
-	flex-wrap: wrap;
+#product1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
 }
 
-
-#product1 .pro{
-	width: 30%;
-	min-width: 250px;
-	padding: 10px 12px;
-	cursor: pointer;
-	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
-	transform: 0.2s ease;
-	position: relative;
+#product1 .pro {
+    width: 30%;
+    min-width: 250px;
+    padding: 10px 12px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    transform: 0.2s ease;
+    position: relative;
 }
 
-#product1 .pro-container .services{
-	padding: 4x;
+#product1 .pro-container .services {
+    padding: 4x;
 }
 
-#product1 .pro:hover{
-	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+#product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
 }
 
-#product1 .pro img{
+#product1 .pro img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-  
-  /* Update styles for the article list */
-.article-list {
-    display: flex;
-    flex-direction: column;
+/* Gallery Section */
+.projects-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-  }
-  
-  .article-box img {
-    width: 200px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));  /* Adjusts dynamically based on screen size */
+    gap: 10px;  /* Small gap between images */
+    margin-top: 2rem;
+    padding: 0 10px;  /* Padding for some space around the gallery */
+}
+
+/* Individual Project Item */
+.project-item {
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image Styling */
+.project-img {
+    width: 100%;
     height: auto;
-  }
-  
+    object-fit: cover;  /* Ensures the image fills the container while maintaining its aspect ratio */
+    display: block;  /* Removes space below the image */
+    border-radius: 10px;  /* Optional: rounded corners for each image */
+}
+
+/* Hover Effect */
+.project-item:hover {
+    transform: scale(1.05);  /* Slight zoom effect when hovering */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom Styles for the Gallery */
+.gallery-item {
+    margin: 10px;
+    overflow: hidden;
+}
+
+/* Larger Image */
+.gallery-large img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Gallery Row for Smaller Images */
+.gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Smaller Images */
+.gallery-row .gallery-item {
+    flex: 1 1 30%;  /* Adjusts the width of smaller images */
+    max-width: 30%;
+    margin-top: 10px;
+}
+
+.gallery-row img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Ensuring a responsive layout */
+@media (max-width: 768px) {
+    .gallery-row .gallery-item {
+        flex: 1 1 48%;  /* Two images per row on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-row .gallery-item {
+        flex: 1 1 100%;  /* One image per row on very small screens */
+    }
+}
+
 
 /* Contact Page*/
 #contact {
@@ -445,6 +522,7 @@ article .icon {
     justify-content: center;
     flex-direction: column;
     height: 70vh;
+    margin-top: 150px;
 }
 
 .contact_info_upper_container {
@@ -471,13 +549,8 @@ article .icon {
     margin-left: 10px;
 }
 
-.contact_info_container .likedin {
-    margin-left: 20px;
-}
-
 .contact_info_container .twitter {
-    height: 2rem;
-    margin-left: 5px;
+    height: 2.5rem;
 }
 
 .contact_icon {
@@ -583,79 +656,120 @@ article .icon {
 	background-color:#1a1a1a;
 	color: #fff;
 }
-
-/* Footer */
-footer {
-    height: 26vh;
-    margin: 0 1rem;
+.social-handle {
+    margin-top: 10px;
     display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
-footer p {
+.social-handle p {
     text-align: center;
     font-size: 13px;
 	margin: 0 0 8px 0;
 }
 
-footer .col{
+.social-handle col{
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	margin-top: 10px;
 }
 
-footer .col a {
+.social-handle col a {
     font-size: 15px;
 }
 
-footer .logo{
+.social-handle .logo{
 	height: 10vh;
 	width: 15vh;
 	object-fit: contain;
 	margin-top: 0;
 	border: none;
+    background-color: #098b3f;
 }
 
-footer h4{
+.social-handle h4{
 	font-size: 14px;
 	padding-bottom: 20px;
 }
 
-footer a{
-	font-size: 20px;
-	text-decoration: none;
-	color: #222;
-	margin-bottom: 10px;
+.contact_info_container img{
+    margin-right: 5px;
 }
 
-footer .follow{
+
+.social-handle .follow{
 	margin-top: 20px;
 }
 
-footer .follow i{
+.social-handle .follow i{
 	color: #000000;
 	padding-right: 4px;
 	cursor: pointer;
     width: 5px;
 }
 
-footer .install .row img{
+.social-handle .install .row img{
 	border: 1px solid;
 	border-radius: 6px;
 }
 
-footer .install img{
+.social-handle.install img{
 	margin: 2px 0 15px 0;
 }
 
-footer .follow i:hover,
-footer a:hover{
+.social-handle .follow i:hover,
+.social-handle a:hover{
 	color: #5a5959;
+}
+
+/* Go to Top Button */
+#goTopBtn {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    z-index: 99;
+    display: none;
+    background: #021126;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 2px 12px #0003;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#goTopBtn:hover {
+    background: #ed7000;
+    color: #fff;
+}
+
+/* Nav active link */
+.nav-links a.active-link {
+    color: #ed7000;
+    text-decoration: underline;
+}
+
+
+/* Footer */
+footer {
+    margin-top: auto;  /* Pushes footer to the bottom of the page */
+    width: 100%;  /* Ensure footer takes up full width */
+    text-align: center;
+    padding: 5px 0;  /* Add padding for spacing */
 }
 
 footer .copy-right{
 	width: 100%;
 	text-align: center;
+}
+
+
+#responseMessage {
+    margin-top: 20px;
+    font-size: 16px;
+    color: green; /* You can change the color based on success or error */
 }
