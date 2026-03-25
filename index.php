@@ -1,0 +1,376 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <!-- Desktop Nav -->
+    <nav id="desktop-nav">
+        <div class="logo">Markjoe Tumukunde</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Hamburger Nav -->
+    <nav id="hamburger-nav">
+        <div class="logo">Markjoe Tumukunde</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>   
+    </nav>
+
+    <!-- Profile Section -->
+    <section id="profile">
+        <div class="section_pic_container">
+            <img src="./Assets/profile-pic-5.png" alt="Markjoe Profile Picture">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">
+                Hello I'm
+            </p>
+            <h1 class="title">Markjoe Tumukunde</h1>
+            <p class="section_text_p2">Computer Scientist</p>
+            <p class="section_description">
+                I’m a computer scientist and web developer with a passion for solving real world problems. With over 3 years of experience in building modern web applications using technologies like HTML, CSS, JavaScript and Python. I am always looking for new challenges and opportunities to grow my skills.
+            </p>
+            <div class="btn_container">
+                <button class="btn btn_color_2" onclick="window.open('./Assets/MyCV.pdf')">Download CV</button>
+                <button class="btn btn_color_1" onclick="location.href='#contact'">Contact Info</button>
+            </div>
+            <!--
+            <div id="socials-container">
+                <img src="./Assets/linkedin.png" alt="My linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/markjoe-tumukunde-221a0b24a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'">
+                <img src="./Assets/github.png" alt="My github profile" class="icon" onclick="location.href='https://github.com/MarkjoeTumukunde'">
+            </div>
+            -->
+        </div>
+        <img src="./Assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='#about'">
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section_container">
+            <div class="section_pic_container">
+                <img src="Assets/side.png" alt="Profile Picture" class="about_pic">
+            </div>
+            <div class="about_details_container">
+                <div class="about_containers">
+                    <div class="details_container">
+                        <img src="Assets/experience.png" alt="Experience Icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>3+ Years In Data Science</p>
+                        <p>3+ Years In Computer Science</p>
+                        <p>4 Years experience in Python Programming</p>
+                        <p>7 years experience in Grapichs design</p>
+                    </div>
+                    <div class="details_container">
+                        <img src="Assets/education.png" alt="Education Icon" class="icon">
+                        <h3>Education</h3>
+                        <p>Bachelor of Science in Computer Science</p>
+                        <p>IBM Data Science Professional Certificate</p>
+                        <p>Python Professional Programming</p>
+                        <p>Certificate Code Academy</p>
+                    </div>
+                </div>
+                <div class="text_container">
+                    <h3>Career Objective</h3>
+                    <p>
+                        A highly motivated and results driven computer scientist with over 3 years of experience in Data Science, Computer Science and Python programming. Possessing a proven ability to adapt to new technologies and continuously learn to improve skills. Recognized for delivering on objectives and consistently meeting targets, I am committed to leveraging my expertise to solve complex problems and contribute to the growth of a forward-thinking organization. A dependable and accountable professional with a strong work ethic and a passion for innovation.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./Assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='#experience'">
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <p class="section_text_p1">Explore</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience_details_container">
+            <div class="about_containers">
+                <div class="details_container">
+                    <h2 class="experience_subtitle">Front End Development</h2>
+                    <div class="article_container">
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div><h3>HTML</h3><p>Experienced</p></div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div><h3>CSS</h3><p>Experienced</p></div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div><h3>HTML</h3><p>Experienced</p></div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div><h3>Data Science</h3><p>Experienced</p></div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div><h3>Java Script</h3><p>Intermediate</p></div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div><h3>Java Script</h3><p>Intermediate</p></div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div><h3>Java Script</h3><p>Intermediate</p></div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div><h3>Data Science</h3><p>Experienced</p></div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details_container">
+                    <h2 class="experience_subtitle">Back End Development</h2>
+                    <div class="article_container">
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div><h3>PostgreSQL</h3><p>Basic</p></div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div><h3>Node Js</h3><p>Intermediate</p></div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div><h3>Express Js</h3><p>Intermediate</p></div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div><h3>Git</h3><p>Intermediate</p></div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div><h3>TypeScript</h3><p>Intermediate</p></div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div><h3>Artifical Intelligence</h3><p>Experienced</p></div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div><h3>Git</h3><p>Intermediate</p></div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div><h3>TypeScript</h3><p>Intermediate</p></div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./Assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='#projects'">
+    </section>
+
+    <!-- Projects Section (All Projects & Gallery) -->
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <!-- Project One -->
+        <div class="details_containers color_container">
+            <p class="section_text_p3">Educational Tracking real-time website</p>
+            <div class="article_container">
+                <div class="gallery-item gallery-large">
+                    <img src="Assets/Educational/project-2.png" alt="Project 2" class="project_img">
+                </div>
+                <div class="gallery-row">
+                    <div class="gallery-item"><img src="Assets/Educational/login.png" alt="Project 2A" class="project_img"></div>
+                    <div class="gallery-item"><img src="Assets/Educational/register.png" alt="Project 2B" class="project_img"></div>
+                    <div class="gallery-item"><img src="Assets/Educational/users.png" alt="Project 2E" class="project_img"></div>
+                    <div class="gallery-item"><img src="Assets/Educational/graph.png" alt="Project 2D" class="project_img"></div>
+                    <div class="gallery-item"><img src="Assets/Educational/bargraph.png" alt="Project 2D" class="project_img"></div>
+                    <div class="gallery-item"><img src="Assets/Educational/student.png" alt="Project 2D" class="project_img"></div>
+                </div>
+            </div>
+            <h2 class="experience_subtitle project_title">Project One</h2>
+            <div class="btn_container">
+                <button class="btn btn_color_2 project_btn" onclick="window.open('https://github.com/MarkjoeTumukunde/edu-performance', '_blank')">Github</button>
+                <button class="btn btn_color_2 project_btn" onclick="window.open('https://github.com/MarkjoeTumukunde/IT-100-Internet-technologies-Web-design.git', '_blank')">Live Demo</button>
+            </div>
+        </div>
+        <!-- Project Two -->
+        <div class="experience_details_container">
+            <div class="about_containers">
+                <div class="details_containers color_container">
+                    <p class="section_text_p3">Shopping Website</p>
+                    <div class="article_container">
+                        <div class="gallery-item gallery-large">
+                            <img src="Assets/Shopping/project-1.png" alt="Home page" class="project_img">
+                        </div>
+                        <div class="gallery-row">
+                            <div class="gallery-item"><img src="Assets/Shopping/banner.png" alt="banner" class="project_img"></div>
+                            <div class="gallery-item"><img src="Assets/Shopping/cart.png" alt="Cart" class="project_img"></div>
+                            <div class="gallery-item"><img src="Assets/Shopping/contact.png" alt="Cart" class="project_img"></div>
+                        </div>
+                    </div>
+                    <h2 class="experience_subtitle project_title">Project Two</h2>
+                    <div class="btn_container">
+                        <button class="btn btn_color_2 project_btn" onclick="window.open('https://github.com/MarkjoeTumukunde/Supreme-test-shopping-Website/tree/main/Web%20Assignment', '_blank')">Github</button>
+                        <button class="btn btn_color_2 project_btn" onclick="window.open('https://markjoetumukunde.github.io/Supreme-shopping-website/', '_blank')">Live Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Project Three -->
+        <div class="experience_details_container">
+            <div class="about_containers">
+                <div class="details_containers color_container">
+                    <p class="section_text_p3">Amazon Web Project</p>
+                    <div class="article_container">
+                        <div class="gallery-item gallery-large">
+                            <img src="Assets/Amazon.png" alt="Amazon Project" class="project_img">
+                        </div>
+                    </div>
+                    <h2 class="experience_subtitle project_title">Project Three</h2>
+                    <div class="btn_container">
+                        <button class="btn btn_color_2 project_btn" onclick="window.open('https://github.com/MarkjoeTumukunde/Amazon-Web-Project', '_blank')">Github</button>
+                        <button class="btn btn_color_2 project_btn" onclick="window.open('https://github.com/MarkjoeTumukunde/IT-100-Internet-technologies-Web-design.git', '_blank')">Live Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Graphics Design Gallery -->
+        <div class="details_containers color_container">
+            <p class="section_text_p3">Graphics Design</p>
+            <div class="projects-gallery" id="graphics-gallery">
+                <div class="project-item"><img src="Assets/TruckLink.png" alt="Project 4" class="project-img"></div>
+                <div class="project-item"><img src="Assets/Tweyambe Inter Generational.png" alt="Project 8" class="project-img"></div>
+                <div class="project-item"><img src="Assets/Botique flyer.png" alt="Project 10" class="project-img"></div>
+                <div class="project-item"><img src="Assets/Test 1.png" alt="Project 5" class="project-img"></div>
+                <div class="project-item"><img src="Assets/overnight.png" alt="Project 9" class="project-img"></div>
+                <div class="project-item"><img src="Assets/Kazo post.png" alt="Project 7" class="project-img"></div>
+                <div class="project-item"><img src="Assets/smooch.png" alt="Project 10" class="project-img"></div>
+                <div class="project-item"><img src="Assets/Bronchure.png" alt="Project 6" class="project-img"></div>
+            </div>
+        </div>
+        <!-- Arrow to Contact -->
+        <img src="./Assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='#contact'">
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <p class="section_text_p1">Get inTouch</p>
+        <h1 class="title">Contact Me</h1>
+        <div id="contactus">
+            <!--Form-->      
+            <div class="contact_info_container">
+                <div class="contact-box">
+                    <div class="contact form">
+                        <h1>Send a message</h1>
+                        <form id="contactForm" method="POST" action="send_message.php">
+                            <div class="formbox">
+                                <div class="raw50">
+                                    <div class="inputbox">
+                                        <span>Name</span>
+                                        <input type="text" id="name" name="name" placeholder="Enter Your Name Here" required>
+                                    </div>
+                                    <div class="inputbox">
+                                        <span>Company</span>
+                                        <input type="text" id="company" name="company" placeholder="Enter Your Company Here" required>
+                                    </div>
+                                </div>
+                                <div class="radio">
+                                    <div class="input-radio">
+                                        <label>Gender:</label>
+                                        <input type="radio" name="gender" id="male" value="Male" required> Male
+                                        <input type="radio" name="gender" id="female" value="Female" required> Female
+                                    </div>
+                                </div>
+                                <div class="raw50">
+                                    <div class="inputbox">
+                                        <span>Email Address</span>
+                                        <input type="email" id="email" name="email" placeholder="Enter Your Email Here" required>
+                                    </div>
+                                    <div class="inputbox">
+                                        <span>Mobile Number</span>
+                                        <input type="text" id="mobile" name="mobile" placeholder="Enter Your Mobile Number Here" required>
+                                    </div>
+                                </div>
+                                <div class="raw100">
+                                    <div class="inputbox">
+                                        <span>Message</span>
+                                        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+                                    </div>
+                                </div>
+                                <div class="raw100">
+                                    <div class="inputbox">
+                                        <input class="normal" type="submit" value="Send">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="responseMessage"></div>
+                        <div class="social-handle">
+                            <div class="col">
+                                <div class="contact_info_container">
+                                    <img src="./Assets/twitter.png" alt="twitter" class="icon contact_icon email_icon twitter">
+                                    <p><a href="https://twitter.com/Markjoetumukund">Twitter</a></p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="contact_info_container">
+                                    <img src="./Assets/whatsapp_icon.png" alt="whatsapp" class="icon contact_icon email_icon twitter">
+                                    <p><a href="https://wa.me/+256773541900" target="_blank">+256773541900</a></p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="contact_info_container">
+                                    <img src="./Assets/email.png" alt="Email icon" class="icon contact_icon email_icon">
+                                    <p><a href="mailto:examplemail@gmail.com">macjoe98@gmail.com</a></p>
+                                </div>
+                            </div>
+                            <div class="col"></div>
+                            <div class="col">
+                                <div class="contact_info_container">
+                                    <img src="./Assets/linkedin.png" alt="linkedin icon" class="icon contact_icon">
+                                    <p class="likedin"><a href="https://www.linkedin.com/in/markjoe-tumukunde-221a0b24a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedin</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="copy-right">
+            <p>Copyright &#169; 2024 MarkjoeTumukunde. All Rights reserved</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
