@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <!-- Desktop Nav -->
+    <nav id="desktop-nav">
+        <div class="logo">Markjoe Tumukunde</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Hamburger Nav -->
+    <nav id="hamburger-nav">
+        <div class="logo">Markjoe Tumukunde</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>   
+    </nav>
+
+    <!-- Profile Section -->
+    <section id="profile">
+        <div class="section_pic_container">
+            <img src="./Assets/profile-pic-5.png" alt="Markjoe Profile Picture">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">
+                Hello I'm
+            </p>
+            <h1 class="title">Markjoe Tumukunde</h1>
+            <p class="section_text_p2">Computer Scientist</p>
+            <p class="section_description">
+                Motivated Computer Science graduate with hands-on experience in data management, CCTV operations and programming (Python, Java). Skilled in data analysis, machine learning, and database management, with a proven ability to adapt quickly to new technologies and work environments. Committed to applying technical expertise and continuous learning to deliver practical solutions and support organizational goals.
+            </p>
+            <div class="btn_container">
+                <button class="btn btn_color_2" onclick="window.open('./Assets/MyCV.pdf')">Download CV</button>
+                <button class="btn btn_color_1" onclick="location.href='#contact'">Contact Info</button>
+            </div>
+            <!--
+            <div id="socials-container">
+                <img src="./Assets/linkedin.png" alt="My linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/markjoe-tumukunde-221a0b24a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'">
+                <img src="./Assets/github.png" alt="My github profile" class="icon" onclick="location.href='https://github.com/MarkjoeTumukunde'">
+            </div>
+            -->
+        </div>
+        <!--
+        <img src="./Assets/arrow.png" alt="Arrow Icon" class="icon arrow scroll-arrow" data-target="#about">
+        -->
+    </section>
+
+    <!-- About Section -->
+   <section id="about">
+    <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+
+        <div class="about_wrapper">
+
+            <!-- Left: About Description -->
+            <div class="about_card">
+                <h3>Career Objective</h3>
+                <p>
+                    A highly motivated and results-driven Computer Scientist with over 3 years of experience in
+                    Data Science, Python programming, Machine Learning, and general IT operations.
+                    I excel at quickly adapting to new technologies, solving problems efficiently, and delivering
+                    high-quality work. Passionate about innovation and continuous learning, I aim to contribute to
+                    forward-thinking teams while growing professionally.
+                </p>
+            </div>
+
+            <!-- Right: Key Strengths -->
+            <div class="about_card">
+                <h3>Key Strengths</h3>
+                <ul class="about_list">
+                    <li>Strong analytical and problem-solving skills</li>
+                    <li>Advanced knowledge of Python & data processing</li>
+                    <li>Excellent teamwork and communication abilities</li>
+                    <li>High adaptability to new tools and environments</li>
+                    <li>Attention to detail and strong work ethic</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills / Technology Stack Section -->
+    <section id="skills">
+        <p class="section_text_p1">What I Know</p>
+        <h1 class="title">Skills & Technology</h1>
+
+        <div class="skills_container">
+
+            <!-- Development / Programming -->
+            <div class="skills_category">
+                <h2>Programming</h2>
+                <div class="skill">
+                    <span>HTML5</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 95%;"></div></div>
+                </div>
+                <div class="skill">
+                    <span>CSS3</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill">
+                    <span>JavaScript</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
+                </div>
+                <div class="skill">
+                    <span>React.js</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 75%;"></div></div>
+                </div>
+                <div class="skill">
+                    <span>Python</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 75%;"></div></div>
+                </div>
+                <div class="skill">
+                    <span>PHP</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 75%;"></div></div>
+                </div>
+                <div class="skill">
+                    <span>Java</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 50%;"></div></div>
+                </div>
+                <div class="skill">
+                    <span>MySQL / Databases</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 75%;"></div></div>
+                </div>
+            </div>
+
+            <!-- IT / Networking & Tools -->
+            <div class="skills_category">
+                <h2>Networking & Tools</h2>
+                <div class="skill">
+                    <span>Operating Systems</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
+                </div>
+                <div class="skill">
+                    <span>Computer Networking</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 75%;"></div></div>
+                </div>
+                <div class="skill">
+                    <span>Network Security</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 70%;"></div></div>
+                </div>
+                <div class="skill">
+                    <span>Data Structures & Algorithms</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 75%;"></div></div>
+                </div>
+                <div class="skill">
+                    <span>Git & GitHub</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
+                </div>
+                <div class="skill">
+                    <span>Cloud Basics</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 60%;"></div></div>
+                </div>
+                <div class="skill">
+                    <span>AI / Machine Learning</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 50%;"></div></div>
+                </div>
+                <div class="skill">
+                    <span>Adobe Photoshop & Illustrator</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
+                </div>
+                <div class="skill">
+                    <span>Figma</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 60%;"></div></div>
+                </div>
+                <div class="skill">
+                    <span>MS Office</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
+                </div>
+                <div class="skill">
+                    <span>CCTV & Security Systems</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
+                </div>
+            </div>
+
+            <!-- Professional / Soft Skills -->
+            <div class="skills_category">
+                <h2>Professional & Soft Skills</h2>
+                <div class="skill">
+                    <span>Analytical Thinking & Problem-Solving</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill">
+                    <span>Teamwork & Collaboration</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
+                </div>
+                <div class="skill">
+                    <span>Communication Skills (Written & Verbal)</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
+                </div>
+                <div class="skill">
+                    <span>Time Management & Meeting Deadlines</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
+                </div>
+                <div class="skill">
+                    <span>Professionalism & Confidentiality</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- EXPERIENCE & PROJECTS SECTION -->
+    <section id="experience">
+        <p class="section_text_p1">Journey</p>
+        <h1 class="title">Experience</h1>
+
+        <div class="timeline">
+
+            <!-- Education -->
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h2>Bachelor of Science in Computer Science</h2>
+                    <h3>Uganda Technology and Management University, Uganda</h3>
+                    <p class="experience_dates">Sep 2022 - Nov 2025</p>
+
+                    <div class="xp-section">
+                        <h4>What I Learned</h4>
+                        <ul>
+                            <li>Core computer science principles: Algorithms, Data Structures, System Design, Computational Theory</li>
+                            <li>Programming: Python, Java, Web Development (HTML/CSS/JS), Database Design</li>
+                            <li>Networking, Operating Systems, Cybersecurity</li>
+                            <li>Soft skills: Teamwork, problem-solving, analytical thinking, research skills</li>
+                        </ul>
+                    </div>
+
+                    <div class="xp-section">
+                        <h4>Technologies Used</h4>
+                        <div class="tags">
+                            <span>Python</span><span>Java</span><span>HTML/CSS</span>
+                            <span>JavaScript</span><span>MySQL</span>
+                        </div>
+                    </div>
+
+                    <div class="xp-section">
+                        <h4>Skills Gained</h4>
+                        <div class="tags">
+                            <span>Critical Thinking</span><span>Problem Solving</span>
+                            <span>System Analysis</span><span>Teamwork</span>
+                            <span>Project Collaboration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TruckLink -->
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h2>TruckLink – Transportation & Logistics</h2>
+                    <h3>Full System – Self-Developed</h3>
+                    <p class="experience_dates">Jun 2020 - Present</p>
+
+                    <div class="xp-section">
+                        <h4>What I Built / Duties</h4>
+                        <ul>
+                            <li>Developed multi-role dashboards for clients, drivers, and admins</li>
+                            <li>Implemented wallet system: deposits, withdrawals, transfers, PIN, 2FA, refunds</li>
+                            <li>Created real-time chat system, booking management, and fleet tracking</li>
+                            <li>Maintained system security and performed debugging and enhancements</li>
+                        </ul>
+                    </div>
+
+                    <div class="xp-section">
+                        <h4>Technologies Used</h4>
+                        <div class="tags">
+                            <span>PHP</span><span>MySQL</span><span>JavaScript</span>
+                            <span>Python</span><span>HTML/CSS</span>
+                        </div>
+                    </div>
+
+                    <div class="xp-section">
+                        <h4>Skills Gained</h4>
+                        <div class="tags">
+                            <span>Backend Development</span><span>Frontend Development</span>
+                            <span>Database Design</span><span>Security Implementation</span>
+                            <span>UI/UX Design</span><span>Real-time Systems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Educational Performance System -->
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h2>Educational Performance Tracking System</h2>
+                    <h3>University System – Self-Developed</h3>
+                    <p class="experience_dates">Jun 2020 - Present</p>
+
+                    <div class="xp-section">
+                        <h4>What I Built / Duties</h4>
+                        <ul>
+                            <li>Developed secure role-based dashboards for students, lecturers, and admins</li>
+                            <li>Managed marks, analytics, and trend visualization for performance tracking</li>
+                            <li>Implemented search, filtering, and interactive charts using Chart.js</li>
+                            <li>Ensured data integrity, security, and responsive UI/UX</li>
+                        </ul>
+                    </div>
+
+                    <div class="xp-section">
+                        <h4>Technologies Used</h4>
+                        <div class="tags">
+                            <span>PHP</span><span>MySQL</span><span>JavaScript</span>
+                            <span>Chart.js</span><span>HTML/CSS</span>
+                        </div>
+                    </div>
+
+                    <div class="xp-section">
+                        <h4>Skills Gained</h4>
+                        <div class="tags">
+                            <span>Data Analysis</span><span>Database Management</span>
+                            <span>UI/UX Design</span><span>Visualization</span>
+                            <span>Interactive Dashboard Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Security Guard -->
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h2>Security Guard – X-Ray Operator</h2>
+                    <h3>Abu Dhabi International Airport, UAE</h3>
+                    <p class="experience_dates">Apr 2023 - Jan 2024</p>
+
+                    <div class="xp-section">
+                        <h4>Key Duties</h4>
+                        <ul>
+                            <li>Operated X-ray screening machines for passenger luggage and cargo</li>
+                            <li>Inspected items for prohibited materials and potential threats</li>
+                            <li>Maintained airport security standards and compliance</li>
+                            <li>Responded to alerts and coordinated with team during incidents</li>
+                        </ul>
+                    </div>
+
+                    <div class="xp-section">
+                        <h4>Skills Gained</h4>
+                        <div class="tags">
+                            <span>Security Operations</span><span>Attention to Detail</span>
+                            <span>Crisis Management</span><span>Teamwork</span>
+                            <span>Professionalism</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ENEC -->
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h2>Data Entrant</h2>
+                    <h3>Emirates Nuclear Energy Company, Abu Dhabi</h3>
+                    <p class="experience_dates">Jan 2019 - Jun 2020</p>
+
+                    <div class="xp-section">
+                        <h4>Key Duties</h4>
+                        <ul>
+                            <li>Entered and updated large volumes of data accurately</li>
+                            <li>Ensured data quality, integrity and confidentiality compliance</li>
+                            <li>Assisted in preparing reports and records for management</li>
+                        </ul>
+                    </div>
+
+                    <div class="xp-section">
+                        <h4>Skills Gained</h4>
+                        <div class="tags">
+                            <span>Data Management</span><span>MS Office</span>
+                            <span>Accuracy</span><span>Analytical Thinking</span>
+                            <span>Time Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CCTV -->
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h2>Data Entrant & CCTV Operator</h2>
+                    <h3>Al Mamoura Academy, Abu Dhabi</h3>
+                    <p class="experience_dates">Jun 2020 - Nov 2022 </p>
+
+                    <div class="xp-section">
+                        <h4>Key Duties</h4>
+                        <ul>
+                            <li>Monitored CCTV feeds to ensure campus safety and security</li>
+                            <li>Reported suspicious activities and coordinated with security team</li>
+                            <li>Performed daily administrative data entry tasks accurately</li>
+                        </ul>
+                    </div>
+
+                    <div class="xp-section">
+                        <h4>Skills Gained</h4>
+                        <div class="tags">
+                            <span>CCTV Monitoring</span><span>Security Operations</span>
+                            <span>Data Entry</span><span>Teamwork</span>
+                            <span>Attention to Detail</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="documents">
+        <p class="section_text_p1">Proof of Expertise</p>
+        <h1 class="title">Documents & Certificates</h1>
+
+        <div class="docs-container">
+
+            <!-- Education Documents -->
+            <div class="doc-card">
+                <img src="Assets/utamu-uganda-technology-and-management-university-seeklogo.png" alt="Education Icon">
+                <h3>Bachelor of Science in Computer Science</h3>
+                <div class="details">
+                    <span class="name">Uganda Technology and Management University</span>
+                    <span class="period">Sep 2022 - Nov 2025</span>
+                </div>
+                <p class="description">
+                    Core CS principles, programming in Python & Java, database management, web development, networking, OS, cybersecurity.
+                </p>
+                <a href="documents/BSc_Computer_Science.pdf" target="_blank" class="btn">View Document</a>
+            </div>
+
+            <!-- Certificates -->
+            <div class="doc-card">
+                <img src="Assets/ibm.png" alt="Certificate Icon">
+                <h3>IBM Data Science Professional Certificate</h3>
+                <div class="details">
+                    <span class="name">Coursera</span>
+                    <span class="period">May 2024</span>
+                </div>
+                <p class="description">
+                    Practical experience in Python, SQL, data visualization, machine learning, cloud-based data analysis, and capstone project.
+                </p>
+                <a href="documents/IBM Data Science Professional Certificate.pdf" target="_blank" class="btn">View Document</a>
+            </div>
+
+            <div class="doc-card">
+                <img src="Assets/simplilearn-logo-hd.png" alt="Certificate Icon">
+                <h3>Machine Learning Certificate</h3>
+                <div class="details">
+                    <span class="name">SkillUp / Simplilearn</span>
+                    <span class="period">Aug 2023</span>
+                </div>
+                <p class="description">
+                    Learned supervised & unsupervised learning, data preprocessing, predictive modeling using Python.
+                </p>
+                <a href="documents/Machine_Learning.pdf" target="_blank" class="btn">View Document</a>
+            </div>
+
+            <div class="doc-card">
+                <img src="Assets/macquarie-university-seeklogo.png" alt="Certificate Icon">
+                <h3>Excel Skills for Business</h3>
+                <div class="details">
+                    <span class="name">Coursera / Macquarie University</span>
+                    <span class="period">Aug 2022</span>
+                </div>
+                <p class="description">
+                    Excel formulas, pivot tables, data cleaning, analysis, visualization, and solving real business problems.
+                </p>
+                <a href="documents/Excel_Skills.pdf" target="_blank" class="btn">View Document</a>
+            </div>
+
+            <div class="doc-card">
+                <img src="Assets/education.png" alt="Education Icon">
+                <h3>Uganda Advanced Certificate of Education</h3>
+                <div class="details">
+                    <span class="name">Valley College, Uganda</span>
+                    <span class="period">Completed</span>
+                </div>
+                <p class="description">
+                    Advanced secondary education, foundational knowledge for higher studies.
+                </p>
+                <a href="documents/UACE passlip.pdf" target="_blank" class="btn">View Document</a>
+            </div>
+
+            <div class="doc-card">
+                <img src="Assets/education.png" alt="Education Icon">
+                <h3>Uganda Certificate of Education (UCE)</h3>
+                <div class="details">
+                    <span class="name">Nganwa High School, Uganda</span>
+                    <span class="period">Completed</span>
+                </div>
+                <p class="description">
+                    Completed secondary education, establishing basic academic skills.
+                </p>
+                <a href="documents/UCE Certificate" target="_blank" class="btn">View Document</a>
+            </div>
+        </div>
+    </section>
+
+
+
+   <!-- Projects Section (All Projects & Gallery) -->
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+
+        <!-- Project One -->
+        <div class="details_containers color_container" data-project="1">
+            <h2 class="experience_subtitle project_title">Project One</h2>
+            <p class="section_text_p3">TruckLink website: A transportation and logistics company website</p>
+            <div class="article_container">
+                <div class="gallery-item gallery-large">
+                    <img src="Assets/Trucklink/homepage.png" alt="Project 2" class="project-img">
+                </div>
+                <div class="gallery-row">
+                    <div class="gallery-item"><img src="Assets/Trucklink/slidebar.png" alt="Project 2A" class="project-img"></div>
+                    <div class="gallery-item"><img src="Assets/Trucklink/dashboard.png" alt="Project 2B" class="project-img"></div>
+                    <div class="gallery-item"><img src="Assets/Trucklink/wallet.png" alt="Project 2E" class="project-img"></div>
+                    <div class="gallery-item"><img src="Assets/Trucklink/tracking.png" alt="Project 2D" class="project-img"></div>
+                    <div class="gallery-item"><img src="Assets/Trucklink/completed_jobs.png" alt="Project 2D" class="project-img"></div>
+                    <div class="gallery-item"><img src="Assets/Trucklink/truckspage.png" alt="Project 2D" class="project-img"></div>
+                </div>
+            </div>
+            <div class="btn_container">
+                <button class="btn btn_color_2 project_btn" onclick="window.open('https://github.com/MarkjoeTumukunde/edu-performance', '_blank')">Github</button>
+                <button class="btn btn_color_2 project_btn" onclick="window.open('https://trucklink.org', '_blank')">Visit Website</button>
+            </div>
+        </div>
+
+        <!-- Project Two -->
+        <div class="details_containers color_container" data-project="2">
+            <h2 class="experience_subtitle project_title">Project Two</h2>
+            <p class="section_text_p3">Educational Tracking real-time website</p>
+            <div class="article_container">
+                <div class="gallery-item gallery-large">
+                    <img src="Assets/Educational/project-2.png" alt="Project 2" class="project-img">
+                </div>
+                <div class="gallery-row">
+                    <div class="gallery-item"><img src="Assets/Educational/login.png" alt="Project 2A" class="project-img"></div>
+                    <div class="gallery-item"><img src="Assets/Educational/register.png" alt="Project 2B" class="project-img"></div>
+                    <div class="gallery-item"><img src="Assets/Educational/users.png" alt="Project 2E" class="project-img"></div>
+                    <div class="gallery-item"><img src="Assets/Educational/graph.png" alt="Project 2D" class="project-img"></div>
+                    <div class="gallery-item"><img src="Assets/Educational/bargraph.png" alt="Project 2D" class="project-img"></div>
+                    <div class="gallery-item"><img src="Assets/Educational/student.png" alt="Project 2D" class="project-img"></div>
+                </div>
+            </div>
+            <div class="btn_container">
+                <button class="btn btn_color_2 project_btn" onclick="window.open('https://github.com/MarkjoeTumukunde/edu-performance', '_blank')">Github</button>
+                <button class="btn btn_color_2 project_btn" onclick="window.open('https://github.com/MarkjoeTumukunde/IT-100-Internet-technologies-Web-design.git', '_blank')">Live Demo</button>
+            </div>
+        </div>
+
+        <!-- Project Three -->
+        <div class="details_containers color_container" data-project="3">
+            <h2 class="experience_subtitle project_title">Project Three</h2>
+            <p class="section_text_p3">Shopping Website</p>
+            <div class="article_container">
+                <div class="gallery-item gallery-large">
+                    <img src="Assets/Shopping/project-1.png" alt="Home page" class="project-img">
+                </div>
+                <div class="gallery-row">
+                    <div class="gallery-item"><img src="Assets/Shopping/banner.png" alt="banner" class="project-img"></div>
+                    <div class="gallery-item"><img src="Assets/Shopping/cart.png" alt="Cart" class="project-img"></div>
+                    <div class="gallery-item"><img src="Assets/Shopping/contact.png" alt="Cart" class="project-img"></div>
+                </div>
+            </div>
+            <div class="btn_container">
+                <button class="btn btn_color_2 project_btn" onclick="window.open('https://github.com/MarkjoeTumukunde/Supreme-test-shopping-Website/tree/main/Web%20Assignment', '_blank')">Github</button>
+                <button class="btn btn_color_2 project_btn" onclick="window.open('https://markjoetumukunde.github.io/Supreme-shopping-website/', '_blank')">Live Demo</button>
+            </div>
+        </div>
+
+        <!-- Project Four -->
+        <div class="details_containers color_container" data-project="4">
+            <h2 class="experience_subtitle project_title">Project Four</h2>
+            <p class="section_text_p3">Amazon Web Project</p>
+            <div class="article_container">
+                <div class="gallery-item gallery-large">
+                    <img src="Assets/Amazon.png" alt="Amazon Project" class="project-img">
+                </div>
+            </div>
+            <div class="btn_container">
+                <button class="btn btn_color_2 project_btn" onclick="window.open('https://github.com/MarkjoeTumukunde/Amazon-Web-Project', '_blank')">Github</button>
+                <button class="btn btn_color_2 project_btn" onclick="window.open('https://github.com/MarkjoeTumukunde/IT-100-Internet-technologies-Web-design.git', '_blank')">Live Demo</button>
+            </div>
+        </div>
+
+        <!-- Graphics Design Gallery -->
+        <div class="details_containers color_container" data-project="5">
+            <p class="section_text_p3">Graphics Design</p>
+            <div class="projects-gallery" id="graphics-gallery">
+                <div class="project-item"><img src="Assets/TruckLink.png" alt="Project 4" class="project-img"></div>
+                <div class="project-item"><img src="Assets/Tweyambe Inter Generational.png" alt="Project 8" class="project-img"></div>
+                <div class="project-item"><img src="Assets/Botique flyer.png" alt="Project 10" class="project-img"></div>
+                <div class="project-item"><img src="Assets/Test 1.png" alt="Project 5" class="project-img"></div>
+                <div class="project-item"><img src="Assets/overnight.png" alt="Project 9" class="project-img"></div>
+                <div class="project-item"><img src="Assets/Kazo post.png" alt="Project 7" class="project-img"></div>
+                <div class="project-item"><img src="Assets/smooch.png" alt="Project 10" class="project-img"></div>
+                <div class="project-item"><img src="Assets/Bronchure.png" alt="Project 6" class="project-img"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Template (Global, re-used by all projects) -->
+    <div class="lightbox" id="lightbox">
+        <img src="" alt="Zoomed Project" id="lightbox-img">
+        <span class="close" id="lightbox-close">&times;</span>
+        <span class="prev" id="lightbox-prev">&#10094;</span>
+        <span class="next" id="lightbox-next">&#10095;</span>
+    </div>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <p class="section_text_p1">Get inTouch</p>
+        <h1 class="title">Contact Me</h1>
+        <div id="contactus">
+            <div class="contact_info_container">
+                <div class="contact-box">
+                    <div class="contact form">
+                        <h1>Send a message</h1>
+                        <form id="contactForm" method="POST" action="https://formspree.io/f/xwpbloya">
+                            <div class="formbox">
+                                <div class="raw50">
+                                    <div class="inputbox">
+                                        <span>Name</span>
+                                        <input type="text" id="name" name="name" placeholder="Enter Your Name Here" required>
+                                    </div>
+                                    <div class="inputbox">
+                                        <span>Company</span>
+                                        <input type="text" id="company" name="company" placeholder="Enter Your Company Here" required>
+                                    </div>
+                                </div>
+                                <div class="radio">
+                                    <div class="input-radio">
+                                        <label>Gender:</label>
+                                        <input type="radio" name="gender" id="male" value="Male" required> Male
+                                        <input type="radio" name="gender" id="female" value="Female" required> Female
+                                    </div>
+                                </div>
+                                <div class="raw50">
+                                    <div class="inputbox">
+                                        <span>Email Address</span>
+                                        <input type="email" id="email" name="email" placeholder="Enter Your Email Here" required>
+                                    </div>
+                                    <div class="inputbox">
+                                        <span>Mobile Number</span>
+                                        <input type="text" id="mobile" name="mobile" placeholder="Enter Your Mobile Number Here" required>
+                                    </div>
+                                </div>
+                                <div class="raw100">
+                                    <div class="inputbox">
+                                        <span>Message</span>
+                                        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+                                    </div>
+                                </div>
+                                <div class="raw100">
+                                    <div class="inputbox">
+                                        <input class="normal" type="submit" value="Send">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="responseMessage"></div>
+                        <div class="social-handle">
+                            <div class="col">
+                                <div class="contact_info_container">
+                                    <img src="./Assets/twitter.png" alt="twitter" class="icon contact_icon email_icon twitter">
+                                    <p><a href="https://twitter.com/Markjoetumukund">Twitter</a></p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="contact_info_container">
+                                    <img src="./Assets/whatsapp_icon.png" alt="whatsapp" class="icon contact_icon email_icon twitter">
+                                    <p><a href="https://wa.me/+256773541900" target="_blank">+256773541900</a></p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="contact_info_container">
+                                    <img src="./Assets/email.png" alt="Email icon" class="icon contact_icon email_icon">
+                                    <p><a href="mailto:tumukundemarkjoe@gmail.com">tumukundemarkjoe@gmail.com</a></p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="contact_info_container">
+                                    <img src="./Assets/linkedin.png" alt="linkedin icon" class="icon contact_icon email_icon" >
+                                    <p class="likedin"><a href="https://www.linkedin.com/in/markjoe-tumukunde-221a0b24a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedin</a></p>
+                                </div>
+                            </div>     
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="copy-right">
+            <p>Copyright &#169; 2025 MarkjoeTumukunde. All Rights reserved</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
